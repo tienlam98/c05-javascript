@@ -48,7 +48,34 @@
 // }
 // console.log(demSoUoc);
 
-// bai6
+// bai6a
+let x = Number(prompt("Nhap so nguyen bat ky"));
+function isPrime(number) {
+    if (number == 1) {
+        return true;
+    }
+    else {
+        if (number > 1) {
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
+if (isPrime(x)) {
+    console.log(x, "la so nguyen to");
+}
+else {
+    console.log(x, "khong la so nguyen to");
+}
+
+// bai6b
 // let soUoc = 0;
 // let x = prompt("Nhap so nguyen bat ky");
 // if (x == 1) {
@@ -84,12 +111,12 @@
 // bai9
 
 // bai10
-let tongAm = 0;
-let n = Number(prompt("Nhap so nguyen bat ky"));
-for (let i = 0; i <= n; i++) {
-    if (i > -1) {
-        tongAm = tongAm + i;
-    }
-}
-console.log(tongAm);
+// let tongAm = 0;
+// let n = Number(prompt("Nhap so nguyen bat ky"));
+// for (let i = 0; i <= n; i++) {
+//     if (i > -1) {
+//         tongAm = tongAm + i;
+//     }
+// }
+// console.log(tongAm);
 
